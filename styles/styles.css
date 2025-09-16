@@ -4,13 +4,31 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(120, 121, 120);
+    background-color: #d3cece;
 }
 p {
     padding: 0;
 }
+
+
+nav{
+    background: linear-gradient(to right, #a30a8f, #e9ecef, #3f99f3);
+    text-align: center;
+    padding: 10px;   
+    font-size: 1.2rem;
+    color: #000
+    text-decoration: none;
+}
+nav a{
+
+    text-decoration: none;
+    color: #161515;
+    font-weight: bold;
+    padding: 0 10px;    
+
+}
 main{
-    padding: auto;
+
     width: 840px;
 }
 aside{
@@ -23,17 +41,27 @@ aside{
     text-align: center;
 }
 
-aside img {
+img {
+    border: 1px solid #000;
     width: 200px;
     height: auto;
+    box-shadow: #161515 2px 2px 5px;
+    padding: 5px;
 }
- main img{
+ /* main img{
     width: 150px;
     height: auto;
- }
+ } */
 
  footer{
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+ }
+
+ h1{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 2rem;
+    color: #3f99f3;
  }
