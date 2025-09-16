@@ -9,18 +9,16 @@ body{
 p {
     padding: 0;
 }
-
-
 nav{
-    background: linear-gradient(to right, #a30a8f, #e9ecef, #3f99f3);
+    background-color: #4f8ecc;
     text-align: center;
     padding: 10px;   
     font-size: 1.2rem;
-    color: #000
+    color: #000;
     text-decoration: none;
 }
 nav a{
-
+    display: block;
     text-decoration: none;
     color: #161515;
     font-weight: bold;
@@ -29,7 +27,7 @@ nav a{
 }
 main{
 
-    width: 840px;
+    max-width: 840px;
 }
 aside{
     width: 20rem;
@@ -48,10 +46,10 @@ img {
     box-shadow: #161515 2px 2px 5px;
     padding: 5px;
 }
- /* main img{
-    width: 150px;
+ aside img{
+    width: 200px;
     height: auto;
- } */
+ } 
 
  footer{
     margin-top: 15px;
