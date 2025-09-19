@@ -55,6 +55,8 @@ img {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 10px 0;
+    background-color: #4f8ecc;
  }
 
  h1{
