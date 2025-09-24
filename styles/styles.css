@@ -1,67 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #d3cece;
+
+/* Root Variables */
+:root {
+  --main-color: #81ac90;
+  --secondary-color: #161515;
+  --background-color: rgb(70, 85, 69);
+  --text-color: #333;
+  --border-color: #000;
 }
+
+/* Body Styling */
+body {
+  background-color: var(--background-color);
+}
+
+/* Paragraph Reset */
 p {
-    padding: 0;
-}
-nav{
-    background-color: #4f8ecc;
-    text-align: center;
-    padding: 10px;   
-    font-size: 1.2rem;
-    color: #000;
-    text-decoration: none;
-}
-nav a{
-    display: block;
-    text-decoration: none;
-    color: #161515;
-    font-weight: bold;
-    padding: 0 10px;    
-
-}
-main{
-
-    max-width: 840px;
-}
-aside{
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+  padding: 1rem;
 }
 
-img {
-    border: 1px solid #000;
-    width: 200px;
-    height: auto;
-    box-shadow: #161515 2px 2px 5px;
-    padding: 5px;
+/* Navigation Bar */
+nav {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: var(--border-color);
 }
- aside img{
-    width: 200px;
-    height: auto;
- } 
 
- footer{
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-    padding: 10px 0;
-    background-color: #4f8ecc;
- }
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 0 10px;
+}
 
- h1{
-    text-align: center;
-    margin: 15px 0;
-    font-size: 2rem;
-    color: #3f99f3;
- }
+/* Main Content */
+main {
+  max-width: 840px;
+}
+
+/* Aside Styling */
+aside {
+  width: 20rem;
+  text-align: center;
+  position: relative; /* Needed for absolute positioning of h2 */
+}
+
+/* Profile Image Float */
+main img {
+  border: 1px solid var(--border-color);
+  width: 200px;
+  height: auto;
+  box-shadow: var(--secondary-color) 2px 2px 5px;
+  padding: 10px;
+  float: right;
+}
+
+/* Aside Image */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--main-color);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 2rem;
+  color: #3f99f3;
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/* Temple List Styling */
+ul.box {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Heading Overlay */
+aside h2 {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
