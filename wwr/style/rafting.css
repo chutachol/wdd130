@@ -1,67 +1,76 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
 }
-:root {
-    --color-primary: #2a9d8f;
-    --color-secondary: #e76f51;
-    --color-background: #f4f4f4;
-    --color-text: #333;
-    --font-family: 'Arial, sans-serif, times new roman, serif, georgia, serif';
-    --font-size-base: 16px;
-    --spacing-base: 1rem;
-}
-body {
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    color: var(--color-text);
-    background-color: var(--color-background);
-    line-height: 1.6;
-    padding: var(--spacing-base);
-}
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-h1, h2 {
-    opacity: 0.9;
-    background-color: #f4f4f4;
-    font-family: var(--font-family);
-    color: var(--color-primary);
-}
-nav, p, section, article {
-    margin: var(--font-size-base);
-    padding: 8px;
-}
-.socialmedia a {
-    text-decoration: none;
-  
-}
-.hero p {
-    color: #fff;
-    opacity: 0.9;
-}
-.hero {
-    position: relative;
-    background-image: url('/wwr/images/rafting14_1024.jpg');
-}
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-h1 {
-    position: absolute;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: var(--spacing-base);
-    background-color: rgba(255, 255, 255, 0.8);
-    color: var(--color-primary);
-    width: 100%;
-    height: 40%;
-}
-.hero article img {
-    float: right;
+ :root { 
+    --color-primary: #2a9d8f; 
+    --color-secondary: #e76f51; 
+    --color-background: #8ab3c0; 
+    --color-text: #333; 
+    --font-family: 'Arial, sans-serif, times new roman, serif, georgia, serif'; 
+    --font-size-base: 16px; 
+    --spacing-base: 1rem; 
+} 
+body { 
+    font-family: var(--font-family); 
+    font-size: var(--font-size-base); 
+    color: var(--color-text); 
+    background-color: var(--color-background); 
+    line-height: 1.6; 
+    padding: var(--spacing-base); 
+} 
+header, main, footer { 
+    width: 840px; 
+    margin: 0 auto; 
+} 
+h1, h2 { opacity: 0.9; 
+    background-color: #534848; 
+    font-family: var(--font-family); 
+    color: var(--color-primary); 
+} 
+nav, p, section, article { 
+    margin: var(--font-size-base); 
+    padding: 8px; 
+} 
+.socialmedia a { 
+    text-decoration: none; 
+} 
+.hero p { 
+    color: #fff; 
+    opacity: 0.9; 
+} 
+.hero { 
+    position: relative; 
+    background-image: url('/wwr/images/rafting14_1024.jpg'); 
+} 
+.hero 
+img { 
+    display: block; 
+    width: 100%; 
+    height: auto; 
+} 
+h1 { 
+    position: absolute; 
+    font-size: 2.5rem; 
+    text-align: center; 
+    padding: var(--spacing-base); 
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: var(--color-primary); 
+    width: 100%; height: 40%; 
+} 
+.hero article img { 
+    float: right; 
     width: 125px;
+}
+nav a {
+    float: right;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 2px;
+}
+nav img {
+    position: relative;
 }
