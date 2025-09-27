@@ -35,7 +35,9 @@ nav {
 }
 
 nav a {
-  display: inline-block;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: bold;
