@@ -3,82 +3,308 @@
     margin: 0; 
     padding: 0; 
 }
- :root { 
+
+:root { 
     --color-primary: #2a9d8f; 
     --color-secondary: #e76f51; 
     --color-background: #8ab3c0; 
     --color-text: #333; 
-    --font-family: 'Arial, sans-serif, times new roman, serif, georgia, serif'; 
+    --font-family: 'Arial, sans-serif'; 
     --font-size-base: 16px; 
     --spacing-base: 1rem; 
 } 
+
 body { 
     font-family: var(--font-family); 
     font-size: var(--font-size-base); 
     color: var(--color-text); 
-    background-color: var(--color-background); 
+    background: linear-gradient(135deg, #8ab3c0 0%, #c8d6e5 25%, #f0f4f8 50%, #c8d6e5 75%, #8ab3c0 100%);
     line-height: 1.6; 
-    padding: var(--spacing-base); 
+    padding: 0;
+    margin: 0;
 } 
-header, main, footer { 
-    width: 840px; 
-    margin: 0 auto; 
-} 
-h1, h2 { 
-    opacity: 0.9; 
-    background-color: #534848; 
-    font-family: var(--font-family); 
-    color: var(--color-primary); 
-    padding: var(--spacing-base); 
-    text-align: center;
-} 
-nav, p, section, article { 
-    margin: var(--font-size-base); 
-    padding: 8px; 
-} 
-.socialmedia a { 
+
+a { 
+    color: var(--color-secondary); 
     text-decoration: none; 
-} 
-.hero p { 
-    color: #fff; 
-    opacity: 0.9; 
-} 
-.hero { 
-    position: relative; 
-    background-image: url('/wwr/images/rafting14_1024.jpg'); 
-} 
-.hero 
-img { 
-    display: block; 
-    width: 100%; 
-    height: auto; 
-} 
-h1 { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute; 
-    font-size: 2.5rem; 
-    text-align: center; 
-    padding: 8px; 
-    background-color: rgba(255, 255, 255, 0.8); 
-    color: var(--color-primary); 
-    width: 100%; height: 40px; 
-} 
-.hero article img { 
-    background-color: aquamarine;
-    float: right; 
-    width: 125px;
-}
-nav a {
-    float: right;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--secondary-color);
-  font-weight: bold;
-  padding: 2px;
-}
-nav img {
-    position: relative;
 }
 
+header, main, footer { 
+    width: 100%; 
+    margin: 0 auto; 
+    max-width: 1200px;
+} 
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    width: 200px;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image:url('/images/download.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #ecd7d7;
+    margin-bottom: 1.5rem;
+    background: none;
+    opacity: 1;
+    padding: 0;
+}
+
+.hero article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hero article img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    float: none;
+}
+
+.hero article p {
+    flex: 1;
+    color: #d4cece;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+}
+
+/* History Section */
+.history {
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.history h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    background: none;
+    opacity: 1;
+    padding: 0;
+}
+
+.history p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.history img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Adventure Section */
+.adventure {
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.adventure h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    background: none;
+    opacity: 1;
+    padding: 0;
+    grid-column: 1 / -1;
+}
+
+.adventure > p {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.adventure figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.adventure figure img {
+    width: 175px;
+    height: 125px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.adventure figcaption {
+    font-style: italic;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #534848;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socialmedia a img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
+
+/* Grid Layouts */
+.history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+}
+
+.history p:first-of-type {
+    grid-column: 1;
+    text-align: left;
+}
+
+.history img {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.history p:last-of-type {
+    grid-column: 3;
+    text-align: left;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    align-items: start;
+}
+
+.adventure h2 {
+    grid-column: 1 / -1;
+}
+
+.adventure figure:nth-child(2) { grid-column: 1; }
+.adventure figure:nth-child(3) { grid-column: 2; }
+.adventure figure:nth-child(4) { grid-column: 3; }
+.adventure figure:nth-child(5) { grid-column: 4; }
+.adventure figure:nth-child(6) { grid-column: 5; }
+
+.adventure p {
+    grid-column: 1 / -1;
+    grid-row: 3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero article {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .history {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+    .history p:first-of-type,
+    .history img,
+    .history p:last-of-type {
+        grid-column: 1;
+    }
+    
+    .history img {
+        grid-row: 3;
+    }
+    
+    .history p:last-of-type {
+        grid-row: 4;
+    }
+    
+    .adventure {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(3, auto) auto;
+    }
+    
+    .adventure figure:nth-child(2) { grid-column: 1; grid-row: 2; }
+    .adventure figure:nth-child(3) { grid-column: 2; grid-row: 2; }
+    .adventure figure:nth-child(4) { grid-column: 1; grid-row: 3; }
+    .adventure figure:nth-child(5) { grid-column: 2; grid-row: 3; }
+    .adventure figure:nth-child(6) { grid-column: 1; grid-row: 4; }
+    
+    .adventure p {
+        grid-row: 5;
+    }
+}
